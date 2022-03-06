@@ -3,13 +3,20 @@ import { Route, Switch } from "react-router-dom";
 import "./App.scss";
 
 import Login from "./view/login";
+import SignUp from "./view/signup";
+import Main from "./view/main";
+import Setting from "./view/setting";
+import Nav from "./view/nav";
 
 function App() {
     return (
         <div className="App">
-            hello
+            <Nav />
             <Switch>
                 <Route exact path="/" render={() => <Login />} />
+                <Route path="/signUp" render={() => <SignUp />} />
+                <Route path="/main" render={() => <Main />} />
+                <Route path="/setting" render={() => <Setting />} />
             </Switch>
         </div>
     );

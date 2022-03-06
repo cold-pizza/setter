@@ -1,0 +1,13 @@
+.nav {
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    p {
+        user-select: none;
+        cursor: pointer;
+    }
+}

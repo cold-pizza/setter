@@ -1,0 +1,31 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    p {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input {
+            width: 200px;
+            height: 40px;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #eee;
+        }
+        input:nth-child(2) {
+            margin-bottom: 20px;
+        }
+        input:focus {
+            border-bottom: 1px solid #828282;
+        }
+        .login-btn {
+            margin-bottom: 10px;
+        }
+    }
+}
