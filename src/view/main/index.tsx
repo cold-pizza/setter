@@ -6,21 +6,21 @@ const Main = function () {
     const [start, setStart] = useState(false);
     return (
         <div className="main">
-            {!start ? (
-                <Button
-                    onClick={() => setStart(!start)}
-                    style={{ width: "200px" }}
-                    variant="success"
-                >
-                    Start
-                </Button>
-            ) : (
+            {start ? (
                 <Button
                     onClick={() => setStart(!start)}
                     style={{ width: "200px" }}
                     variant="secondary"
                 >
                     정지
+                </Button>
+            ) : (
+                <Button
+                    onClick={() => setTimeout(() => setStart(!start), 3000)}
+                    style={{ width: "200px" }}
+                    variant="success"
+                >
+                    Start
                 </Button>
             )}
             <section className="vaca-form">
