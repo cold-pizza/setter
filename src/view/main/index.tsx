@@ -16,7 +16,7 @@ const Main = function () {
                 </Button>
             ) : (
                 <Button
-                    onClick={() => setTimeout(() => setStart(!start), 3000)}
+                    onClick={() => setStart(!start)}
                     style={{ width: "200px" }}
                     variant="success"
                 >

@@ -7,6 +7,7 @@ import SignUp from "./view/signup";
 import Main from "./view/main";
 import Setting from "./view/setting";
 import Nav from "./view/nav";
+import Word from "./view/word";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                 <Route path="/signUp" render={() => <SignUp />} />
                 <Route path="/main" render={() => <Main />} />
                 <Route path="/setting" render={() => <Setting />} />
+                <Route path="/word" render={() => <Word />} />
             </Switch>
         </div>
     );
