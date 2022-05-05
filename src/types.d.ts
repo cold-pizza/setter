@@ -2,6 +2,8 @@
 
 import React from "react";
 
+export type LoginFnType = (email: string, password: string) => void;
+
 export type OnChange = (
     e: React.ChangeEvent<HTMLInputElement>,
     state: null | {},
